@@ -1,0 +1,197 @@
+//
+//  WDPch.pch
+//  HotSchool
+//
+//  Created by 吴冬 on 2018/5/8.
+//  Copyright © 2018年 吴冬. All rights reserved.
+//
+
+#ifndef WDPch_pch
+#define WDPch_pch
+
+
+#import <UIKit/UIKit.h>
+#import "WDCalculateTool.h"  //计算工具
+#import "WDActionTool.h"     //动画工具
+#import "UIViewExt.h"
+
+
+#import "BaseNode.h"     //父类node
+#import "BaseScene.h"    //父类场景
+#import "WDBaseModel.h"  //管理node的图片
+#import "PersonManager.h" //管理猪脚的属性，单例
+#import "WDTextureManager.h" //管理texture
+#import <SpriteKit/SpriteKit.h>
+#import "WDGameLogic.h"   //游戏中，物理碰撞逻辑相关
+#import "BaseScene+CreateMonster.h" //怪物创建
+#import "UIImage+CacheImage.h"
+#import "BaseNode+BuffAndDebuff.h"  //buff
+
+typedef NS_ENUM(NSInteger, AttackType) {
+    
+    ONEAttack = 0,
+    TWOAttack,
+    THREEAttack,
+    FOURAttack,
+};
+
+typedef NS_ENUM(NSUInteger, SkillType) {
+    
+    topSkillBtn = 0,
+    middleSkillBtn,
+    bottomSkillBtn,
+    bottom2SkillBtn,
+    changeScene,
+    
+};
+
+typedef NS_ENUM(NSUInteger,Scene) {
+    
+    First_1_scene = 2,
+    First_2_scene,
+    First_3_scene,
+    First_4_scene,
+    Boss_1_scene,
+    Second_1_scene,
+    Second_2_scene,
+    Second_3_scene,
+    Second_4_scene,
+};
+
+//是否是测试状态
+#define IS_TEST NO
+
+//物理showsPhysics
+#define physics NO
+
+
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
+//判断是否 iphone 5 设备
+#define iPhone5                                                                                    \
+([UIScreen instancesRespondToSelector:@selector(currentMode)]                                    \
+? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size)        \
+: NO)
+
+//判断是否 iphone 6 设备
+#define iPhone6                                                                                    \
+([UIScreen instancesRespondToSelector:@selector(currentMode)]                                    \
+? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size)        \
+: NO)
+
+//判断是否 plus 设备
+#define iPhonePlus                                                                                    \
+([UIScreen instancesRespondToSelector:@selector(currentMode)]                                    \
+? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size)        \
+: NO)
+
+// RGB颜色转换（16进制->10进制）
+#define UICOLOR_HEX(hexString) [UIColor colorWithRed:((float)((hexString & 0xFF0000) >> 16))/255.0 green:((float)((hexString & 0xFF00) >> 8))/255.0 blue:((float)(hexString & 0xFF))/255.0 alpha:1.0]
+// 带有RGBA的颜色设置
+#define UICOLOR_RGB(R, G, B, A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
+// 随机颜色
+#define UICOLOR_RANDOM [UIColor colorWithRed:(arc4random()%255)/255.0 green:(arc4random()%255)/255.0 blue:(arc4random()%255)/255.0 alpha:1.0]
+
+
+//NSLog
+#ifdef DEBUG
+# define WDLog(fmt, ...) NSLog((@"\n[File:%s]\n" "[Function:%s]\n" "[Line:%d] \n" fmt), __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+# define WDLog(...);
+#endif
+
+
+
+#pragma mark 通知方法
+#define kNotificationForSkillAction @"kNotificationForSkillAction" //技能释放完的通知
+
+#define kNotificationForChangeAttackBtnImage  @"kNotificationForChangeAttackBtnImage"  //发生会话的通知
+
+#define kAttackImageName @"kAttackImageName"
+
+
+
+#define kNotificationForBossReduceBloodAction @"kNotificationForBossReduceBloodAction" //BOSS减血通知
+#define kNotificationForSetBossBloodAction @"kNotificationForSetBossBloodAction" //设置BOSS血量通知
+
+
+//掉落宝石通知
+#define kNotificationForDropMoneyAction @"kNotificationForDropMoneyAction"
+//关于攻击数值的通知
+#define kNotificationChangeAttackCount    @"kNotificationChangeAttackCount"
+//关于人物血量的通知
+#define kNotificationChangeBloodCount     @"kNotificationChangeBloodCount"
+//关于闪避的通知
+#define kNotificationChangeMissCount      @"kNotificationChangeMissCount"
+//金币飞行动画通知
+#define kNotificationGoldFly              @"kNotificationGoldFly"
+//召唤小怪的通知(boss3)
+#define kNotificationForCallMonster       @"kNotificationForCallMonster"
+
+
+#define kNotificationForChangePersonAction    @"kNotificationForChangePersonAction"//切换猪脚通知
+
+#pragma mark 物理运算类别掩码
+//body.categoryBitMask = 0;  <类别掩码，为0时代表我谁也碰撞不了>
+//body.contactTestBitMask = 0; <碰撞检测掩码，为0时代表不触发检测>
+//body.collisionBitMask = 0;  <允许碰撞掩码，为0时代表谁也碰撞不了我>
+//想要发生碰撞，需要 categoryBitMask & collisionBitMask 运算，为非0，可以发生碰撞
+
+
+static const uint32_t PLAYER_CATEGORY = 0x03;  //0011
+static const uint32_t PLAYER_COLLISION = 0x04; //0100
+static const uint32_t PLAYER_CONTACT  = 0x01;  //0001
+
+static const uint32_t SHANA_CATEGORY = 0x04; 
+static const uint32_t SHANA_COLLISION = 0x01; //0001
+static const uint32_t SHANA_CONTACT  = 0x01;  //0001
+
+
+static const uint32_t MONSTER_CATEGORY = 0x08; //1000
+static const uint32_t MONSTER_COLLISION = 0x08;//1000
+static const uint32_t MONSTER_CONTACT = 0x01;  //0001
+
+static const uint32_t WALL_CATEGORY  = 0x04; //0100
+static const uint32_t WALL_COLLISION = 0x00; //0011
+static const uint32_t WALL_CONTACT   = 0x00; //0001
+
+
+#define kSpeedKey @"kSpeedKey"
+#define kBloodKey @"kBloodKey"
+#define kAttackKey @"kAttackKey"
+#define kMoneyKey @"kMoneyKey"
+#define kMissKey @"kMissKey"
+#define kNameKey @"kNameKey"
+
+#define kPassive_miss @"kPassive_miss"
+#define kPassive_fireBlade @"kPassive_fireBlade"
+#define kPassive_suckBlood @"kPassive_suckBlood"
+
+//当前正在打的关卡
+#define kSceneIndex @"kSceneIndex"
+
+
+
+#define IS_IPHONEX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? (CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size)||CGSizeEqualToSize(CGSizeMake(828, 1792), [[UIScreen mainScreen] currentMode].size)||CGSizeEqualToSize(CGSizeMake(1242, 2688), [[UIScreen mainScreen] currentMode].size)||CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size)) : NO)
+
+#define IS_IPHONE_5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? (CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size)) : NO)
+
+#ifndef __OPTIMIZE__
+#define NSLog(...) NSLog(@"%s 第%d行 \n %@\n\n",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
+#else
+#define NSLog(...) {}
+#endif
+
+
+#pragma mark 常用动画方法
+#define REMOVE_ACTION [SKAction removeFromParent]
+
+
+//页面底部有操作条，操作条距底部间距
+#define BOTTOM_OPERATION_BAR_MARIN (IS_IPHONEX ? 34.f : 0.f)
+
+//页面顶部间距
+#define TOP_MARIN (IS_IPHONEX ? 22.f : 0.f)
+
+#endif /* WDPch_pch */

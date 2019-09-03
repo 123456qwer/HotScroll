@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="162" id="KGk-i7-Jjw" customClass="MapTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="667" height="374.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wdFirstScene.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QAD-k1-hgN">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock.png" translatesAutoresizingMaskIntoConstraints="NO" id="w6R-ow-Qnf">
+                        <rect key="frame" x="268.5" y="122.5" width="130" height="130"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="130" id="QPp-FM-mBr"/>
+                            <constraint firstAttribute="width" constant="130" id="uCF-OW-a93"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star_black.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mao-7e-boA">
+                        <rect key="frame" x="597" y="297" width="50" height="47"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="47" id="Ez5-jg-0K1"/>
+                            <constraint firstAttribute="width" constant="50" id="eFo-em-vkr"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star_black.png" translatesAutoresizingMaskIntoConstraints="NO" id="Hzd-N6-kU8">
+                        <rect key="frame" x="539" y="297" width="50" height="47"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="47" id="gYy-Kc-wfH"/>
+                            <constraint firstAttribute="width" constant="50" id="y9V-Fg-Amz"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star_black.png" translatesAutoresizingMaskIntoConstraints="NO" id="lkA-KM-N0U">
+                        <rect key="frame" x="481" y="297" width="50" height="47"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="47" id="4gy-Mc-wSq"/>
+                            <constraint firstAttribute="width" constant="50" id="qLe-Y0-TqB"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Hzd-N6-kU8" firstAttribute="leading" secondItem="lkA-KM-N0U" secondAttribute="trailing" constant="8" id="4xH-3p-Vql"/>
+                    <constraint firstItem="w6R-ow-Qnf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="5L0-XY-d3d"/>
+                    <constraint firstItem="w6R-ow-Qnf" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="KkQ-fb-qb8"/>
+                    <constraint firstItem="QAD-k1-hgN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="MUF-Fe-BMw"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Hzd-N6-kU8" secondAttribute="bottom" constant="20" id="OsT-rV-dCu"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Mao-7e-boA" secondAttribute="bottom" constant="20" id="Vya-GM-vUR"/>
+                    <constraint firstItem="Mao-7e-boA" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="X2L-2t-RWo"/>
+                    <constraint firstAttribute="bottom" secondItem="QAD-k1-hgN" secondAttribute="bottom" constant="-0.5" id="XMH-sS-w0R"/>
+                    <constraint firstItem="Mao-7e-boA" firstAttribute="leading" secondItem="Hzd-N6-kU8" secondAttribute="trailing" constant="8" id="dXf-MC-qfr"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="lkA-KM-N0U" secondAttribute="bottom" constant="20" id="fZF-0e-oGZ"/>
+                    <constraint firstAttribute="trailing" secondItem="QAD-k1-hgN" secondAttribute="trailing" id="hyJ-FB-Eqg"/>
+                    <constraint firstItem="QAD-k1-hgN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="vKx-jp-0bi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="lockImageView" destination="w6R-ow-Qnf" id="aSZ-NX-CC8"/>
+                <outlet property="mapImageView" destination="QAD-k1-hgN" id="e2L-IP-Fh1"/>
+                <outlet property="star1" destination="Mao-7e-boA" id="9TQ-QY-MRN"/>
+                <outlet property="star2" destination="Hzd-N6-kU8" id="c3o-Sl-Gho"/>
+                <outlet property="star3" destination="lkA-KM-N0U" id="D4m-Qd-CpH"/>
+            </connections>
+            <point key="canvasLocation" x="-288.80000000000001" y="110.19490254872565"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="lock.png" width="130" height="130"/>
+        <image name="star_black.png" width="200" height="191"/>
+        <image name="wdFirstScene.jpg" width="1921" height="640"/>
+    </resources>
+</document>
