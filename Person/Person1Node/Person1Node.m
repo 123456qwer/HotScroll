@@ -417,24 +417,26 @@
     }
     
     
+    CGFloat attackTime = 0.08;
+    
     SKAction *attackAction;
     CGFloat afterTimes = 0.0;
     if (_continuityAttackCount == 0) {
        
-        SKAction *textureA = [SKAction animateWithTextures:_model.attack1Arr timePerFrame:0.1];
+        SKAction *textureA = [SKAction animateWithTextures:_model.attack1Arr timePerFrame:attackTime];
         SKAction *music = _model.attack1MusicAction;
         attackAction = [SKAction group:@[textureA,music]];
         _nowAttackTime = _model.attack1Arr.count * 0.1;
         afterTimes = 0.1 * 2;
         
     }else if(_continuityAttackCount == 1){
-        SKAction *textureA = [SKAction animateWithTextures:_model.attack2Arr timePerFrame:0.1];
+        SKAction *textureA = [SKAction animateWithTextures:_model.attack2Arr timePerFrame:attackTime];
         SKAction *music = _model.attack2MusicAction;
         attackAction = [SKAction group:@[textureA,music]];
         _nowAttackTime = _model.attack2Arr.count * 0.1;
         afterTimes = 0.1 * 2;
     }else if(_continuityAttackCount == 2){
-        SKAction *textureA = [SKAction animateWithTextures:_model.attack3Arr timePerFrame:0.1];
+        SKAction *textureA = [SKAction animateWithTextures:_model.attack3Arr timePerFrame:attackTime];
         SKAction *music = _model.attack3MusicAction;
         attackAction = [SKAction group:@[textureA,music]];
         _nowAttackTime = _model.attack3Arr.count * 0.1;
@@ -446,7 +448,7 @@
         NSInteger direction = [self leftOrRight];
         
         _nowAttackTime = _model.attack4Arr.count * 0.1;
-        SKAction *a = [SKAction animateWithTextures:_model.attack4Arr timePerFrame:0.1];
+        SKAction *a = [SKAction animateWithTextures:_model.attack4Arr timePerFrame:attackTime];
         SKAction *waitAction = [SKAction waitForDuration:0.3];
         SKAction *moveA = [SKAction moveTo:CGPointMake(self.position.x + 250 * direction, self.position.y) duration:0.2];
         SKAction *music = _model.attack4MusicAction;

@@ -215,7 +215,7 @@ static PersonManager *manager = nil;
     }
     
     _missAddCount ++;
-    if (_missAddCount >= 10) {
+    if (_missAddCount >= 15) {
         [[WDNotificationManager shareManager]postNotificationWithMissCount:100];
         _personNode.wdMiss = self.wdMiss + 100;
         _missAddCount = 0;
