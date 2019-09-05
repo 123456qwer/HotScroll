@@ -332,7 +332,7 @@
         
         SKAction *fireAction2 = [SKAction animateWithTextures:[model.meteoriteArr2 subarrayWithRange:NSMakeRange(1, model.meteoriteArr2.count - 1)] timePerFrame:0.1];
         SKAction *removeAction = [SKAction removeFromParent];
-        [boomNode runAction:[SKAction sequence:@[fireAction2,removeAction]]];
+        [boomNode runAction:[SKAction sequence:@[model.musicFireAction,fireAction2,removeAction]]];
     }];
 }
 
@@ -407,7 +407,7 @@
     //3张图 0.1 * 3 * 3
     SKAction *flashAction = [SKAction animateWithTextures:_model.flashArr timePerFrame:0.1];
     SKAction *repAction = [SKAction repeatAction:flashAction count:3];
-    SKAction *seq2 = [SKAction sequence:@[repAction,REMOVE_ACTION]];
+    SKAction *seq2 = [SKAction sequence:@[_model.musicFlashAction,repAction,REMOVE_ACTION]];
     
     [flashNode runAction:seq2 completion:^{
         

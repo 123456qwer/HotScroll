@@ -233,15 +233,18 @@
     SKAction *attackAction;
     CGFloat afterTimes = 0.0;
     if (_continuityAttackCount == 0) {
-        attackAction = [SKAction animateWithTextures:_model.attack1Arr timePerFrame:attackTime];
+        SKAction *a = [SKAction animateWithTextures:_model.attack1Arr timePerFrame:attackTime];
+        attackAction = [SKAction group:@[_model.musicAttackAction1,a]];
         _nowAttackTime = _model.attack1Arr.count * 0.1;
         afterTimes = 0.1 * 2;
     }else if(_continuityAttackCount == 1){
-        attackAction = [SKAction animateWithTextures:_model.attack2Arr timePerFrame:attackTime];
+        SKAction *a = [SKAction animateWithTextures:_model.attack2Arr timePerFrame:attackTime];
+        attackAction = [SKAction group:@[_model.musicAttackAction1,a]];
         _nowAttackTime = _model.attack2Arr.count * 0.1;
         afterTimes = 0.1 * 3;
     }else if(_continuityAttackCount == 2){
-        attackAction = [SKAction animateWithTextures:_model.attack3Arr timePerFrame:attackTime];
+        SKAction *a = [SKAction animateWithTextures:_model.attack3Arr timePerFrame:attackTime];
+        attackAction = [SKAction group:@[_model.musicAttackAction1,a]];
         _nowAttackTime = _model.attack3Arr.count * 0.1;
         afterTimes = 0.1 * 3;
     }else if(_continuityAttackCount == 3){
@@ -254,7 +257,7 @@
         SKAction *a = [SKAction animateWithTextures:_model.attack4Arr timePerFrame:attackTime];
         SKAction *waitAction = [SKAction waitForDuration:0.3];
         SKAction *moveA = [SKAction moveTo:CGPointMake(self.position.x + 250 * direction, self.position.y) duration:0.2];
-        SKAction *seq = [SKAction sequence:@[waitAction,moveA]];
+        SKAction *seq = [SKAction sequence:@[_model.musicAttackAction4,waitAction,moveA]];
         attackAction = [SKAction group:@[a,seq]];
     }
     
@@ -372,7 +375,7 @@
     //跳跃的时候，黑圈不跟着移动
     SKAction *blackMo = [SKAction moveToY:_blackCircleNode.position.y - 150 duration:0.5];
     SKAction *blackMo2 = [SKAction moveToY:_blackCircleNode.position.y duration:0.3];
-    SKAction *seqB = [SKAction sequence:@[blackMo,blackMo2]];
+    SKAction *seqB = [SKAction sequence:@[_model.musicSkillAction1,blackMo,blackMo2]];
     [_blackCircleNode runAction:seqB];
     
     [self setPhySicsBodyNone];
@@ -436,7 +439,7 @@
     
     SKAction *blackMo = [SKAction moveToY:_blackCircleNode.position.y - 75 duration:0.3];
     SKAction *blackMo2 = [SKAction moveToY:_blackCircleNode.position.y duration:0.2];
-    SKAction *seqB = [SKAction sequence:@[wait,blackMo,blackMo2]];
+    SKAction *seqB = [SKAction sequence:@[wait,_model.musicSkillAction2,blackMo,blackMo2]];
     [_blackCircleNode runAction:seqB];
     
     [self setPhySicsBodyNone];
@@ -468,7 +471,7 @@
     SKAction *a = [SKAction animateWithTextures:_model.skill2Arr timePerFrame:0.1];
     
     
-    SKAction *gro = [SKAction group:@[move1,a]];
+    SKAction *gro = [SKAction group:@[_model.musicSkillAction4,move1,a]];
     
     [self setPhySicsBodyNone];
     //[self performSelector:@selector(shanaSetCanTestContact) withObject:nil afterDelay:0.1];
@@ -483,7 +486,7 @@
     [self postSkillNotificationWithType:3];
     if (self.skillBlockWithTime) {
         self.skillType = 3;
-        self.skillBlockWithTime(0.1, 0);
+        self.skillBlockWithTime(0.2, 0);
     }
 }
 

@@ -123,8 +123,9 @@
     }
     
     SKAction *attackAction = [SKAction animateWithTextures:_model.attack1Arr timePerFrame:0.15];
+    SKAction *gro = [SKAction group:@[_model.musicAttackAction,attackAction]];
     __weak typeof(self)weakSelf = self;
-    [self runAction:attackAction completion:^{
+    [self runAction:gro completion:^{
         weakSelf.isAttackIng = NO;
         [weakSelf createCloudNode];
     }];
@@ -179,7 +180,7 @@
     //3张图 0.1 * 3 * 3
     SKAction *flashAction = [SKAction animateWithTextures:_model.flashArr timePerFrame:0.1];
     SKAction *repAction = [SKAction repeatAction:flashAction count:3];
-    SKAction *seq2 = [SKAction sequence:@[repAction,REMOVE_ACTION]];
+    SKAction *seq2 = [SKAction sequence:@[_model.musicFlashAction,repAction,REMOVE_ACTION]];
     
     [flashNode runAction:seq2 completion:^{
         

@@ -81,7 +81,7 @@
     [self removeAllActions];
     SKAction *attack = [SKAction animateWithTextures:_model.attack1Arr timePerFrame:0.1];
     SKAction *alpha  = [SKAction fadeAlphaTo:1 duration:0.15];
-    SKAction *gro = [SKAction group:@[attack,alpha]];
+    SKAction *gro = [SKAction group:@[attack,_model.musicAttackAction,alpha]];
     __weak typeof(self)weakSelf = self;
     [self runAction:gro completion:^{
         weakSelf.isAttackIng = NO;
@@ -117,7 +117,7 @@
     SKAction *removeS = [SKAction removeFromParent];
     SKAction *seqS = [SKAction sequence:@[smokeShow,smokeHidden]];
     SKAction *groS = [SKAction group:@[seqS,repeatA]];
-    SKAction *seqST = [SKAction sequence:@[groS,removeS]];
+    SKAction *seqST = [SKAction sequence:@[_model.musicWindAction,groS,removeS]];
     
     SKAction *pAlpha = [SKAction fadeAlphaTo:0 duration:0.8];
     __weak typeof(self)weakSelf = self;

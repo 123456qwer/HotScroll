@@ -17,6 +17,8 @@
     self.flashArr = [self textureArrayWithName:@"wizard_flash_" count:3];
     self.shadowTexture = [SKTexture textureWithImage:[UIImage imageNamed:@"meteoriteShadow"]];
     self.cloudTexture = [SKTexture textureWithImage:[UIImage imageNamed:@"wizard_cloud"]];
+    self.musicFlashAction = [SKAction playSoundFileNamed:@"wizard_flash" waitForCompletion:NO];
+    self.musicAttackAction = [SKAction playSoundFileNamed:@"wizard_attack" waitForCompletion:NO];
     self.name = @"巫师";
 }
 

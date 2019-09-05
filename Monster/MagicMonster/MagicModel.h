@@ -13,5 +13,6 @@
 @property (nonatomic,strong)SKTexture *shadowTexture;
 @property (nonatomic,copy)NSArray <SKTexture *>*meteoriteArr1;
 @property (nonatomic,copy)NSArray <SKTexture *>*meteoriteArr2;
+@property (nonatomic,strong)SKAction *musicFireAction;
 
 @end

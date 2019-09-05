@@ -12,4 +12,7 @@
 @property (nonatomic,copy)NSArray <SKTexture *>*attack1Arr;
 @property (nonatomic,copy)NSArray <SKTexture *>*hiddenArr;
 @property (nonatomic,strong)SKTexture *dropTexture;//隐身攻击多次流汗动画
+@property (nonatomic,strong)SKAction *musicWindAction;
+@property (nonatomic,strong)SKAction *musicAttackAction;
+
 @end

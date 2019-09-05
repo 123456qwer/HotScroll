@@ -16,6 +16,9 @@
     _dropTexture = [SKTexture textureWithImage:[UIImage imageNamed:@"thief_drop"]];
    NSMutableArray *arr = [self textureArrayWithName:@"thief_move_" count:6];
     [arr removeObjectAtIndex:3];
+    self.musicWindAction = [SKAction playSoundFileNamed:@"thief_wind" waitForCompletion:NO];
+    self.musicAttackAction = [SKAction playSoundFileNamed:@"thief_attack" waitForCompletion:NO];
+
     self.moveArr = arr;
     self.name = @"盗贼";
 }

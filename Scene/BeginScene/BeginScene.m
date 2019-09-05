@@ -62,6 +62,11 @@
 {
     [super didMoveToView:view];
     
+//    SKAudioNode *node = [[SKAudioNode alloc]initWithFileNamed:@"beginMusic"];
+//    node.autoplayLooped = YES;
+//    [self addChild:node];
+   
+    
     _disAppearPoint = CGPointMake(1500, 300);
     self.sceneIndex = -1;
     

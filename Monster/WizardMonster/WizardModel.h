@@ -13,4 +13,6 @@
 @property (nonatomic,copy)NSArray <SKTexture *>*flashArr;
 @property (nonatomic,strong)SKTexture *shadowTexture;
 @property (nonatomic,strong)SKTexture *cloudTexture;
+@property (nonatomic,strong)SKAction *musicFlashAction;
+
 @end

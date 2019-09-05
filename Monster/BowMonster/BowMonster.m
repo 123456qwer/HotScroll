@@ -162,7 +162,7 @@
     
     SKAction *moveAction = [SKAction moveTo:CGPointMake(node.position.x + 2000 * weakSelf.xScale, weakSelf.position.y) duration:2];
     SKAction *removeAction = [SKAction removeFromParent];
-    //SKAction *musicAction = weakSelf.model.arrowMusicAction;
+    SKAction *musicAction = weakSelf.model.arrowMusicAction;
     SKAction *seq = [SKAction sequence:@[moveAction,removeAction]];
     
     SKEmitterNode *blueFire = [SKEmitterNode nodeWithFileNamed:@"BlueFire"];

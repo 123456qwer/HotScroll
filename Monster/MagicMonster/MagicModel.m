@@ -16,6 +16,8 @@
     self.shadowTexture = [SKTexture textureWithImage:[UIImage imageNamed:@"meteoriteShadow"]];
     self.meteoriteArr1 = [self textureArrayWithName:@"wuqishi_mete_star" count:5];
     self.meteoriteArr2 = [self textureArrayWithName:@"wuqishi_mete2_" count:6];
+    self.musicFireAction = [SKAction playSoundFileNamed:@"magic_fire" waitForCompletion:NO];
+    self.musicAttackAction = [SKAction playSoundFileNamed:@"wizard_attack" waitForCompletion:NO];
 
     self.name = @"法师";
 }

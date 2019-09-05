@@ -20,6 +20,18 @@
 
 @property (nonatomic,strong)SKAction *arrowMusicAction;
 @property (nonatomic,strong)SKAction *beAttackMusicAction;
+@property (nonatomic,strong)SKAction *musicAttackAction; //怪物
+
+
+@property (nonatomic,strong)SKAction *musicAttackAction1; //人物攻击
+@property (nonatomic,strong)SKAction *musicAttackAction2;
+@property (nonatomic,strong)SKAction *musicAttackAction3;
+@property (nonatomic,strong)SKAction *musicAttackAction4;
+
+@property (nonatomic,strong)SKAction *musicSkillAction1; //人物技能
+@property (nonatomic,strong)SKAction *musicSkillAction2;
+@property (nonatomic,strong)SKAction *musicSkillAction3;
+@property (nonatomic,strong)SKAction *musicSkillAction4;
 
 //相反操作状态
 @property (nonatomic,copy)NSArray <SKTexture *>*debuffForQuestion;

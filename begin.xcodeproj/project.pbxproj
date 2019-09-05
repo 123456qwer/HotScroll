@@ -899,6 +899,22 @@
 		04B14B742276EC9100055F7E /* monsterTalk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04B14B732276EC9100055F7E /* monsterTalk.jpg */; };
 		04B14B762276ED5B00055F7E /* monsterTalk.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B14B752276ED5B00055F7E /* monsterTalk.png */; };
 		04B4119C21183DC60068621A /* VCR OSD Mono.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04B4119B21183DC60068621A /* VCR OSD Mono.ttf */; };
+		04B92B412320EA6E000A78CE /* thief_wind.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04B92B402320EA6E000A78CE /* thief_wind.mp3 */; };
+		04B92B432320EBBC000A78CE /* thief_attack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04B92B422320EBBC000A78CE /* thief_attack.mp3 */; };
+		04B92B462320ED13000A78CE /* wizard_flash.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04B92B452320ED13000A78CE /* wizard_flash.mp3 */; };
+		04B92B482320EDF5000A78CE /* wizard_attack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04B92B472320EDF5000A78CE /* wizard_attack.mp3 */; };
+		04B92B4B2320F023000A78CE /* magic_fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04B92B4A2320F022000A78CE /* magic_fire.mp3 */; };
+		04B92B4E2320F3AA000A78CE /* shana_attack1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04B92B4D2320F3AA000A78CE /* shana_attack1.mp3 */; };
+		04B92B502320F52A000A78CE /* shana_attack4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04B92B4F2320F529000A78CE /* shana_attack4.mp3 */; };
+		04B92B522320F60A000A78CE /* shana_skill1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04B92B512320F60A000A78CE /* shana_skill1.mp3 */; };
+		04B92B542320F70A000A78CE /* shana_skill2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04B92B532320F70A000A78CE /* shana_skill2.mp3 */; };
+		04B92B5A2320F9CE000A78CE /* shana_skill4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04B92B592320F9CE000A78CE /* shana_skill4.mp3 */; };
+		04B92B5D2320FBE1000A78CE /* kana_attack1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04B92B5C2320FBE0000A78CE /* kana_attack1.mp3 */; };
+		04B92B5F2320FC94000A78CE /* kana_attack2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04B92B5E2320FC94000A78CE /* kana_attack2.mp3 */; };
+		04B92B612320FD8D000A78CE /* kana_skill2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04B92B602320FD8D000A78CE /* kana_skill2.mp3 */; };
+		04B92B632320FE3B000A78CE /* kana_skill1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04B92B622320FE3B000A78CE /* kana_skill1.mp3 */; };
+		04B92B652320FF29000A78CE /* kana_skill3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04B92B642320FF29000A78CE /* kana_skill3.mp3 */; };
+		04B92B672320FFF9000A78CE /* kana_skill4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04B92B662320FFF9000A78CE /* kana_skill4.mp3 */; };
 		04BB4BF5226E999000ACF93C /* person1_jump_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 04BB4BF0226E998F00ACF93C /* person1_jump_3.png */; };
 		04BB4BF6226E999000ACF93C /* person1_jump_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 04BB4BF1226E999000ACF93C /* person1_jump_2.png */; };
 		04BB4BF7226E999000ACF93C /* person1_jump_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 04BB4BF2226E999000ACF93C /* person1_jump_1.png */; };
@@ -1974,6 +1990,22 @@
 		04B14B732276EC9100055F7E /* monsterTalk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = monsterTalk.jpg; sourceTree = "<group>"; };
 		04B14B752276ED5B00055F7E /* monsterTalk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = monsterTalk.png; path = "文字/monsterTalk.png"; sourceTree = "<group>"; };
 		04B4119B21183DC60068621A /* VCR OSD Mono.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VCR OSD Mono.ttf"; sourceTree = "<group>"; };
+		04B92B402320EA6E000A78CE /* thief_wind.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = thief_wind.mp3; sourceTree = "<group>"; };
+		04B92B422320EBBC000A78CE /* thief_attack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = thief_attack.mp3; sourceTree = "<group>"; };
+		04B92B452320ED13000A78CE /* wizard_flash.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wizard_flash.mp3; sourceTree = "<group>"; };
+		04B92B472320EDF5000A78CE /* wizard_attack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wizard_attack.mp3; sourceTree = "<group>"; };
+		04B92B4A2320F022000A78CE /* magic_fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = magic_fire.mp3; sourceTree = "<group>"; };
+		04B92B4D2320F3AA000A78CE /* shana_attack1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shana_attack1.mp3; sourceTree = "<group>"; };
+		04B92B4F2320F529000A78CE /* shana_attack4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shana_attack4.mp3; sourceTree = "<group>"; };
+		04B92B512320F60A000A78CE /* shana_skill1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shana_skill1.mp3; sourceTree = "<group>"; };
+		04B92B532320F70A000A78CE /* shana_skill2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shana_skill2.mp3; sourceTree = "<group>"; };
+		04B92B592320F9CE000A78CE /* shana_skill4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shana_skill4.mp3; sourceTree = "<group>"; };
+		04B92B5C2320FBE0000A78CE /* kana_attack1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kana_attack1.mp3; sourceTree = "<group>"; };
+		04B92B5E2320FC94000A78CE /* kana_attack2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kana_attack2.mp3; sourceTree = "<group>"; };
+		04B92B602320FD8D000A78CE /* kana_skill2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kana_skill2.mp3; sourceTree = "<group>"; };
+		04B92B622320FE3B000A78CE /* kana_skill1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kana_skill1.mp3; sourceTree = "<group>"; };
+		04B92B642320FF29000A78CE /* kana_skill3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kana_skill3.mp3; sourceTree = "<group>"; };
+		04B92B662320FFF9000A78CE /* kana_skill4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kana_skill4.mp3; sourceTree = "<group>"; };
 		04BB4BF0226E998F00ACF93C /* person1_jump_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = person1_jump_3.png; sourceTree = "<group>"; };
 		04BB4BF1226E999000ACF93C /* person1_jump_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = person1_jump_2.png; sourceTree = "<group>"; };
 		04BB4BF2226E999000ACF93C /* person1_jump_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = person1_jump_1.png; sourceTree = "<group>"; };
@@ -3846,6 +3878,11 @@
 		04923F0721255FE1006D7B43 /* Music */ = {
 			isa = PBXGroup;
 			children = (
+				04B92B5B2320FBCB000A78CE /* kanaMusic */,
+				04B92B4C2320F3A2000A78CE /* shanaMusic */,
+				04B92B492320F01B000A78CE /* MagicMusic */,
+				04B92B442320ECF9000A78CE /* WizardMusic */,
+				04B92B3F2320EA5D000A78CE /* ThiefMusic */,
 				04923F15212569E2006D7B43 /* shotterMusic */,
 				04923F0821255FF3006D7B43 /* Person1Music */,
 			);
@@ -3983,6 +4020,57 @@
 				04AB722C2211144A00E1E972 /* BigBladeModel.m */,
 			);
 			path = BigBladeMonster;
+			sourceTree = "<group>";
+		};
+		04B92B3F2320EA5D000A78CE /* ThiefMusic */ = {
+			isa = PBXGroup;
+			children = (
+				04B92B402320EA6E000A78CE /* thief_wind.mp3 */,
+				04B92B422320EBBC000A78CE /* thief_attack.mp3 */,
+			);
+			path = ThiefMusic;
+			sourceTree = "<group>";
+		};
+		04B92B442320ECF9000A78CE /* WizardMusic */ = {
+			isa = PBXGroup;
+			children = (
+				04B92B472320EDF5000A78CE /* wizard_attack.mp3 */,
+				04B92B452320ED13000A78CE /* wizard_flash.mp3 */,
+			);
+			path = WizardMusic;
+			sourceTree = "<group>";
+		};
+		04B92B492320F01B000A78CE /* MagicMusic */ = {
+			isa = PBXGroup;
+			children = (
+				04B92B4A2320F022000A78CE /* magic_fire.mp3 */,
+			);
+			path = MagicMusic;
+			sourceTree = "<group>";
+		};
+		04B92B4C2320F3A2000A78CE /* shanaMusic */ = {
+			isa = PBXGroup;
+			children = (
+				04B92B512320F60A000A78CE /* shana_skill1.mp3 */,
+				04B92B532320F70A000A78CE /* shana_skill2.mp3 */,
+				04B92B592320F9CE000A78CE /* shana_skill4.mp3 */,
+				04B92B4F2320F529000A78CE /* shana_attack4.mp3 */,
+				04B92B4D2320F3AA000A78CE /* shana_attack1.mp3 */,
+			);
+			path = shanaMusic;
+			sourceTree = "<group>";
+		};
+		04B92B5B2320FBCB000A78CE /* kanaMusic */ = {
+			isa = PBXGroup;
+			children = (
+				04B92B622320FE3B000A78CE /* kana_skill1.mp3 */,
+				04B92B602320FD8D000A78CE /* kana_skill2.mp3 */,
+				04B92B642320FF29000A78CE /* kana_skill3.mp3 */,
+				04B92B662320FFF9000A78CE /* kana_skill4.mp3 */,
+				04B92B5E2320FC94000A78CE /* kana_attack2.mp3 */,
+				04B92B5C2320FBE0000A78CE /* kana_attack1.mp3 */,
+			);
+			path = kanaMusic;
 			sourceTree = "<group>";
 		};
 		04BB65CD212BE7B9008F55EB /* ThiefMonster */ = {
@@ -4509,6 +4597,7 @@
 				040784BF225EE7080062F4C7 /* smoke_6.png in Resources */,
 				0407865C225F29400062F4C7 /* person1_skill2_4.png in Resources */,
 				04FEB01F227FDF6500BFA46F /* WD3Scene.sks in Resources */,
+				04B92B462320ED13000A78CE /* wizard_flash.mp3 in Resources */,
 				0409E36B225D9DDF00953073 /* bigBlade_attack_12.png in Resources */,
 				04FEAFC6227FDBB600BFA46F /* Boss3Scene.sks in Resources */,
 				0409E374225D9E0600953073 /* bigBlade_move_4.png in Resources */,
@@ -4558,11 +4647,13 @@
 				0409E284225D976300953073 /* wizard_attack_10.png in Resources */,
 				04078595225F082E0062F4C7 /* person2_move_8.png in Resources */,
 				0409E322225D9C2C00953073 /* savage_move_6.png in Resources */,
+				04B92B5A2320F9CE000A78CE /* shana_skill4.mp3 in Resources */,
 				04AEFB1A226EF9CF00F7EDFF /* star.png in Resources */,
 				045555072272E85900622AD9 /* pass_4.png in Resources */,
 				0407871D225F2F760062F4C7 /* kana_skill2_7.png in Resources */,
 				040786AA225F2AC60062F4C7 /* light_11.png in Resources */,
 				040785ED225F27400062F4C7 /* person1_attack5_3.png in Resources */,
+				04B92B4E2320F3AA000A78CE /* shana_attack1.mp3 in Resources */,
 				0415C46822A788CE0031A389 /* boss3_attack7_3.png in Resources */,
 				0415C46222A788CE0031A389 /* boss3_attack1_4.png in Resources */,
 				04078602225F27970062F4C7 /* person1_beAttack_4.png in Resources */,
@@ -4579,6 +4670,7 @@
 				04AF2A40219134370012E7E7 /* mapSelectBg.jpg in Resources */,
 				0409E2A5225D98A100953073 /* magicMan_attack_4.png in Resources */,
 				0415C47722A788CE0031A389 /* boss3_attack2_1.png in Resources */,
+				04B92B672320FFF9000A78CE /* kana_skill4.mp3 in Resources */,
 				04078641225F28C40062F4C7 /* person1_skill_6.png in Resources */,
 				040785C0225F26690062F4C7 /* person1_attack2_6.png in Resources */,
 				04078660225F294F0062F4C7 /* person1_skill2_6.png in Resources */,
@@ -4596,6 +4688,7 @@
 				0415C47F22A788CE0031A389 /* boss3_attack3_4.png in Resources */,
 				0400C2BC226D8DB800F4C958 /* cannon.png in Resources */,
 				0409E253225D95E200953073 /* thief_move_3.png in Resources */,
+				04B92B5F2320FC94000A78CE /* kana_attack2.mp3 in Resources */,
 				0409E361225D9DB700953073 /* bigBlade_attack_7.png in Resources */,
 				0407872C225F2FC60062F4C7 /* kana_skill3_7.png in Resources */,
 				04B14B762276ED5B00055F7E /* monsterTalk.png in Resources */,
@@ -4679,6 +4772,7 @@
 				040784B0225EE6BD0062F4C7 /* green_light_15.png in Resources */,
 				0415C47122A788CE0031A389 /* boss3_attack9_3.png in Resources */,
 				0486DE6621E485000041746A /* wdFourScene.jpg in Resources */,
+				04B92B482320EDF5000A78CE /* wizard_attack.mp3 in Resources */,
 				04078670225F298D0062F4C7 /* person1_skill22_5.png in Resources */,
 				0409E27C225D974400953073 /* wizard_attack_6.png in Resources */,
 				04BB4BF9226E999000ACF93C /* person1_jump_4.png in Resources */,
@@ -4705,6 +4799,7 @@
 				0409E268225D969D00953073 /* thief_stay_1.png in Resources */,
 				0415C44522A788CE0031A389 /* boss3_attack2_5.png in Resources */,
 				0415C4B722A788CE0031A389 /* boss3_attack4_11.png in Resources */,
+				04B92B432320EBBC000A78CE /* thief_attack.mp3 in Resources */,
 				040784C7225EE7220062F4C7 /* smoke_10.png in Resources */,
 				0415C46E22A788CE0031A389 /* boss3_move_6.png in Resources */,
 				045555112272E85900622AD9 /* pass_3.png in Resources */,
@@ -4775,6 +4870,7 @@
 				04078752225F31530062F4C7 /* kana_stay_2.png in Resources */,
 				0409E2EB225D9AAA00953073 /* angel_skill_1.png in Resources */,
 				040C59312193DF8A00FBD35B /* lizard_16.png in Resources */,
+				04B92B5D2320FBE1000A78CE /* kana_attack1.mp3 in Resources */,
 				040C59322193DF8A00FBD35B /* lizard_12.png in Resources */,
 				040785A7225F26040062F4C7 /* person1_attack_2.png in Resources */,
 				045BE6A5225DF2E000834951 /* passDoor_2.png in Resources */,
@@ -4822,6 +4918,7 @@
 				04078653225F29130062F4C7 /* person1_skill1_6.png in Resources */,
 				0415C43422A788CE0031A389 /* boss3_attack1_6.png in Resources */,
 				0415C4D122A7B1090031A389 /* boss3_wind_7.png in Resources */,
+				04B92B542320F70A000A78CE /* shana_skill2.mp3 in Resources */,
 				0407874D225F311B0062F4C7 /* kana_skill4_10.png in Resources */,
 				0415C4D222A7B1090031A389 /* boss3_wind_1.png in Resources */,
 				0415C47322A788CE0031A389 /* boss3_win_2.png in Resources */,
@@ -4866,6 +4963,7 @@
 				0415C49322A788CE0031A389 /* boss3_died_4.png in Resources */,
 				04078557225F06F10062F4C7 /* person2_attack7_6.png in Resources */,
 				040C592C2193DF8A00FBD35B /* lizard_13.png in Resources */,
+				04B92B412320EA6E000A78CE /* thief_wind.mp3 in Resources */,
 				040786D2225F2DDD0062F4C7 /* kana_attack1_7.png in Resources */,
 				0486DE6E21E4A1070041746A /* Boss1Scene.png in Resources */,
 				0409E276225D973100953073 /* wizard_attack_3.png in Resources */,
@@ -4887,6 +4985,7 @@
 				040C59372193DF8A00FBD35B /* lizard_8.png in Resources */,
 				0407849C225EE6750062F4C7 /* green_light_5.png in Resources */,
 				04078611225F27DA0062F4C7 /* person1_skill3_2.png in Resources */,
+				04B92B502320F52A000A78CE /* shana_attack4.mp3 in Resources */,
 				0407864B225F28F60062F4C7 /* person1_skill1_2.png in Resources */,
 				0409E34B225D9D2E00953073 /* sniper_move_2.png in Resources */,
 				04078501225F05830062F4C7 /* person2_attack3_5.png in Resources */,
@@ -4935,6 +5034,7 @@
 				0409E2F7225D9B2500953073 /* savage_attack_2.png in Resources */,
 				040785EF225F27470062F4C7 /* person1_attack5_4.png in Resources */,
 				040786C0225F2B240062F4C7 /* light_22.png in Resources */,
+				04B92B612320FD8D000A78CE /* kana_skill2.mp3 in Resources */,
 				0409E30B225D9BBB00953073 /* savage_attack2_5.png in Resources */,
 				0407853E225F06830062F4C7 /* person2_attack6_5.png in Resources */,
 				04078734225F2FEA0062F4C7 /* kana_skill3_11.png in Resources */,
@@ -4968,6 +5068,7 @@
 				439872C320A1925E001B8CFB /* LaunchScreen.storyboard in Resources */,
 				040785DE225F26F10062F4C7 /* person1_attack4_4.png in Resources */,
 				040784C1225EE70F0062F4C7 /* smoke_7.png in Resources */,
+				04B92B632320FE3B000A78CE /* kana_skill1.mp3 in Resources */,
 				04A863F1228ABA1200C515D7 /* wdTenScene.jpg in Resources */,
 				0409E236225D929500953073 /* bowman_move_2.png in Resources */,
 				0415C44B22A788CE0031A389 /* boss3_attack7_13.png in Resources */,
@@ -5039,6 +5140,7 @@
 				045BE6B9225DF33100834951 /* passDoor_12.png in Resources */,
 				04078604225F279E0062F4C7 /* person1_beAttack_5.png in Resources */,
 				040786E9225F2E4C0062F4C7 /* kana_attack2_9.png in Resources */,
+				04B92B4B2320F023000A78CE /* magic_fire.mp3 in Resources */,
 				0407848C225EE4880062F4C7 /* D.png in Resources */,
 				04C37BA0227062B500FF562B /* learnPassive.png in Resources */,
 				04FEB025227FDF6500BFA46F /* WD4Scene.sks in Resources */,
@@ -5117,6 +5219,7 @@
 				0409E265225D965F00953073 /* thief_smoke_6.png in Resources */,
 				0415C43822A788CE0031A389 /* boss3_attack8_1.png in Resources */,
 				0407870A225F2F1D0062F4C7 /* kana_skill1_3.png in Resources */,
+				04B92B652320FF29000A78CE /* kana_skill3.mp3 in Resources */,
 				0415C4D422A7B1090031A389 /* boss3_wind_8.png in Resources */,
 				040785F1225F274E0062F4C7 /* person1_attack5_5.png in Resources */,
 				040784D2225EE76F0062F4C7 /* blade.png in Resources */,
@@ -5222,6 +5325,7 @@
 				040784AA225EE6A80062F4C7 /* green_light_12.png in Resources */,
 				0486DE6021E481500041746A /* wdFirstScene.jpg in Resources */,
 				0409E282225D975B00953073 /* wizard_attack_9.png in Resources */,
+				04B92B522320F60A000A78CE /* shana_skill1.mp3 in Resources */,
 				040785E6225F270D0062F4C7 /* person1_attack4_8.png in Resources */,
 				04078527225F06220062F4C7 /* person2_attack5_2.png in Resources */,
 				045516D6228BF9DB00F1C13A /* WD12Scene.jpg in Resources */,

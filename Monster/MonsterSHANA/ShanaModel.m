@@ -15,7 +15,14 @@
     [self setStayArrWithPicName:@"person2_stay_" count:4];
     _beAttack = [SKTexture textureWithImage:[UIImage imageNamed:@"person2_beAttack"]];
     _skill1Arr  = [self attackArrWithName:@"person2_attack4_" count:13];
-    _skill2Arr  = [self attackArrWithName:@"person2_attack5_" count:8];
+    NSMutableArray *skill2Arr = [self attackArrWithName:@"person2_attack5_" count:8];
+    
+    [skill2Arr insertObject:[SKTexture textureWithImage:[UIImage imageNamed:@"person2_attack5_1"]] atIndex:0];
+    [skill2Arr insertObject:[SKTexture textureWithImage:[UIImage imageNamed:@"person2_attack5_1"]] atIndex:0];
+    [skill2Arr insertObject:[SKTexture textureWithImage:[UIImage imageNamed:@"person2_attack5_1"]] atIndex:0];
+    _skill2Arr = skill2Arr;
+    
+    
     self.moveArr = [self attackArrWithName:@"person2_move_" count:8];
     NSMutableArray *arr = [NSMutableArray array];
     SKTexture *texture = [SKTexture textureWithImage:[UIImage imageNamed:@"person2_attack7_1"]];
@@ -37,9 +44,16 @@
     _attack3Arr = [self attackArrWithName:@"person2_attack3_" count:7];
     _attack4Arr = [self attackArrWithName:@"person2_attack6_" count:11];
     self.beAttackArr = [self attackArrWithName:@"person2_beAttack_" count:6];
-
+    
     self.beAttackTexture = [SKTexture textureWithImage:[UIImage imageNamed:@"person2_beAttack"]];
     self.name = @"shana";
+    
+    self.musicAttackAction1 = [SKAction playSoundFileNamed:@"shana_attack1" waitForCompletion:NO];
+    self.musicAttackAction4 = [SKAction playSoundFileNamed:@"shana_attack4" waitForCompletion:NO];
+    self.musicSkillAction1 = [SKAction playSoundFileNamed:@"shana_skill1" waitForCompletion:NO];
+    self.musicSkillAction2 = [SKAction playSoundFileNamed:@"shana_skill2" waitForCompletion:NO];
+    self.musicSkillAction4 = [SKAction playSoundFileNamed:@"shana_skill4" waitForCompletion:NO];
+
 }
 
 - (NSMutableArray <SKTexture *>*)attackArrWithName:(NSString *)name

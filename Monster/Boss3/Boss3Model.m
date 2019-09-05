@@ -44,6 +44,9 @@
         [arr addObject:texture];
     }
     self.missArr = arr;
+    
+    self.musicFlashAction = [SKAction playSoundFileNamed:@"wizard_flash" waitForCompletion:NO];
+    self.musicFireAction = [SKAction playSoundFileNamed:@"magic_fire" waitForCompletion:NO];
 }
 
 @end

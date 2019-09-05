@@ -112,9 +112,11 @@
     
     SKAction *attackAction = [SKAction animateWithTextures:_model.attack1Arr timePerFrame:0.1];
     SKAction *repAction = [SKAction repeatAction:attackAction count:3];
+    SKAction *gro = [SKAction group:@[_model.musicAttackAction,repAction]];
+
     //__weak typeof(self)weakSelf = self;
     [self performSelector:@selector(meteoriteAttackWithCount:) withObject:nil afterDelay:_model.attack1Arr.count * 0.1];
-    [self runAction:repAction completion:^{
+    [self runAction:gro completion:^{
         
     }];
 
@@ -197,7 +199,7 @@
         
         SKAction *fireAction2 = [SKAction animateWithTextures:[model.meteoriteArr2 subarrayWithRange:NSMakeRange(1, model.meteoriteArr2.count - 1)] timePerFrame:0.1];
         SKAction *removeAction = [SKAction removeFromParent];
-        [boomNode runAction:[SKAction sequence:@[fireAction2,removeAction]]];
+        [boomNode runAction:[SKAction sequence:@[model.musicFireAction,fireAction2,removeAction]]];
     }];
 }
 

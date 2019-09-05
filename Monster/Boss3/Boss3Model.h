@@ -31,6 +31,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,strong)SKTexture *cloudTexture;
 @property (nonatomic,copy)NSArray <SKTexture *>*flashArr;
 
+@property (nonatomic,strong)SKAction *musicFlashAction;
+@property (nonatomic,strong)SKAction *musicFireAction;
 
 @end
 

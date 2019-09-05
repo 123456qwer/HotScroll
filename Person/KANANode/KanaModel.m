@@ -28,6 +28,15 @@
     self.stayArr = [self textureArrayWithName:@"kana_stay_" count:4];
     self.moveArr = [self textureArrayWithName:@"kana_move_" count:8];
     self.winArr  = [self textureArrayWithName:@"kana_win_" count:6];
+    
+    self.musicAttackAction1 = [SKAction playSoundFileNamed:@"kana_attack1" waitForCompletion:NO];
+    self.musicAttackAction2 = [SKAction playSoundFileNamed:@"kana_attack2" waitForCompletion:NO];
+    self.musicSkillAction2 = [SKAction playSoundFileNamed:@"kana_skill2" waitForCompletion:NO];
+    self.musicSkillAction1 = [SKAction playSoundFileNamed:@"kana_skill1" waitForCompletion:NO];
+    self.musicSkillAction3 = [SKAction playSoundFileNamed:@"kana_skill3" waitForCompletion:NO];
+    self.musicSkillAction4 = [SKAction playSoundFileNamed:@"kana_skill4" waitForCompletion:NO];
+
+
 }
 
 @end

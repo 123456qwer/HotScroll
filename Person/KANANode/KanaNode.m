@@ -220,7 +220,7 @@
     CGPoint movePoint2 = CGPointMake(eNode.position.x + 1000 * direction, eNode.position.y);
     SKAction *move = [SKAction moveTo:movePoint2 duration:0.5];
     SKAction *removeA = [SKAction removeFromParent];
-    SKAction *seq = [SKAction sequence:@[move,removeA]];
+    SKAction *seq = [SKAction sequence:@[_model.musicAttackAction1,move,removeA]];
     
     [eNode runAction:seq];
 }
@@ -257,7 +257,7 @@
     SKAction *gr = [SKAction group:@[move,alpha]];
     SKAction *waitAction = [SKAction waitForDuration:1];
     SKAction *removeA = [SKAction removeFromParent];
-    SKAction *seq = [SKAction sequence:@[gr,waitAction,removeA]];
+    SKAction *seq = [SKAction sequence:@[_model.musicAttackAction2,gr,waitAction,removeA]];
     
 
     [eNode runAction:seq completion:^{
@@ -307,7 +307,7 @@
     CGPoint calculatePoint2 = [WDCalculateTool calculateMaxMoveXAndY:movePoint2 maxX:2500 maxY:650 personSize:CGSizeMake(self.imageWidth, self.imageHeight)];
     SKAction *moveAction = [SKAction moveTo:calculatePoint2 duration:0.3];
     SKAction *seq = [SKAction sequence:@[waitAction,moveAction]];
-    SKAction *gr = [SKAction group:@[seq,textureAction]];
+    SKAction *gr = [SKAction group:@[_model.musicSkillAction1,seq,textureAction]];
     
     __weak typeof(self)weakSelf = self;
     [self runAction:gr completion:^{
@@ -334,7 +334,7 @@
     CGPoint calculatePoint2 = [WDCalculateTool calculateMaxMoveXAndY:movePoint2 maxX:2500 maxY:650 personSize:CGSizeMake(self.imageWidth, self.imageHeight)];
     SKAction *moveAction = [SKAction moveTo:calculatePoint2 duration:0.3];
     SKAction *seq = [SKAction sequence:@[moveAction]];
-    SKAction *gr = [SKAction group:@[seq,textureAction]];
+    SKAction *gr = [SKAction group:@[_model.musicSkillAction2,seq,textureAction]];
     
     __weak typeof(self)weakSelf = self;
     [self runAction:gr completion:^{
@@ -360,9 +360,9 @@
     [self setPhySicsBodyNone];
     [self performSelector:@selector(setPhy) withObject:nil afterDelay:0.5];
     SKAction *textureAction = [SKAction animateWithTextures:_model.skill3Arr timePerFrame:0.1];
-    
+    SKAction *gr = [SKAction group:@[_model.musicSkillAction3,textureAction]];
     __weak typeof(self)weakSelf = self;
-    [self runAction:textureAction completion:^{
+    [self runAction:gr completion:^{
         [weakSelf endPhy];
         weakSelf.isSkillAttackIng = NO;
         [weakSelf stayAction];
@@ -378,7 +378,7 @@
     CGPoint calculatePoint2 = [WDCalculateTool calculateMaxMoveXAndY:movePoint2 maxX:2500 maxY:650 personSize:CGSizeMake(self.imageWidth, self.imageHeight)];
     SKAction *moveAction = [SKAction moveTo:calculatePoint2 duration:0.3];
     SKAction *seq = [SKAction sequence:@[waitAction,moveAction]];
-    SKAction *gr = [SKAction group:@[seq,textureAction]];
+    SKAction *gr = [SKAction group:@[_model.musicSkillAction4,seq,textureAction]];
     __weak typeof(self)weakSelf = self;
     [self runAction:gr completion:^{
         weakSelf.isSkillAttackIng = NO;

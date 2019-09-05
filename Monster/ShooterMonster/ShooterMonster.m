@@ -255,8 +255,8 @@
             //[node physicalBackGroundNodeWithColor:[UIColor orangeColor] size:node.size position:CGPointMake(0, 0)];
             SKAction *moveAction = [SKAction moveTo:CGPointMake(node.position.x + 500 * self.xScale, self.position.y) duration:1];
             SKAction *removeAction = [SKAction removeFromParent];
-            //SKAction *musicAction = weakSelf.model.arrowMusicAction;
-            SKAction *seq = [SKAction sequence:@[moveAction,removeAction]];
+            SKAction *musicAction = weakSelf.model.arrowMusicAction;
+            SKAction *seq = [SKAction sequence:@[musicAction,moveAction,removeAction]];
             
             if (weakSelf.isBeAttackIng || node.isBeAttackIng || node.isDeadIng) {
                 [node removeFromParent];
