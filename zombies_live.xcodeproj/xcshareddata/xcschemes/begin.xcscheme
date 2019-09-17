@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "439872AB20A1925E001B8CFB"
-               BuildableName = "begin.app"
-               BlueprintName = "begin"
-               ReferencedContainer = "container:begin.xcodeproj">
+               BuildableName = "zombies_live.app"
+               BlueprintName = "zombies_live"
+               ReferencedContainer = "container:zombies_live.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "439872AB20A1925E001B8CFB"
-            BuildableName = "begin.app"
-            BlueprintName = "begin"
-            ReferencedContainer = "container:begin.xcodeproj">
+            BuildableName = "zombies_live.app"
+            BlueprintName = "zombies_live"
+            ReferencedContainer = "container:zombies_live.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "439872AB20A1925E001B8CFB"
-            BuildableName = "begin.app"
-            BlueprintName = "begin"
-            ReferencedContainer = "container:begin.xcodeproj">
+            BuildableName = "zombies_live.app"
+            BlueprintName = "zombies_live"
+            ReferencedContainer = "container:zombies_live.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "439872AB20A1925E001B8CFB"
-            BuildableName = "begin.app"
-            BlueprintName = "begin"
-            ReferencedContainer = "container:begin.xcodeproj">
+            BuildableName = "zombies_live.app"
+            BlueprintName = "zombies_live"
+            ReferencedContainer = "container:zombies_live.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

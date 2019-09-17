@@ -13,5 +13,5 @@
 @property (nonatomic,copy)NSArray <SKTexture *>*blastArr;
 @property (nonatomic,strong)SKTexture *star;
 @property (nonatomic,strong)SKTexture *circle;
-
+@property (nonatomic,strong)SKAction *musicSniperLine;
 @end

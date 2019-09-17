@@ -38,6 +38,7 @@
     }
     
     _attack1Arr = arr;
+    self.musicSniperLine = [SKAction playSoundFileNamed:@"sniper_line" waitForCompletion:NO];
     
 }
 @end

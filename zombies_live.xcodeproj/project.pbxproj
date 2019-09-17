@@ -944,6 +944,7 @@
 		04C37B9B22705ED400FF562B /* blue4.png in Resources */ = {isa = PBXBuildFile; fileRef = 04C37B9522705ED400FF562B /* blue4.png */; };
 		04C37B9E2270623D00FF562B /* PassiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C37B9D2270623D00FF562B /* PassiveViewController.m */; };
 		04C37BA0227062B500FF562B /* learnPassive.png in Resources */ = {isa = PBXBuildFile; fileRef = 04C37B9F227062B500FF562B /* learnPassive.png */; };
+		04C7B6272321F7030085653A /* sniper_line.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04C7B6262321F7030085653A /* sniper_line.mp3 */; };
 		04C93272211148F600F7A07C /* WDTextureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C93271211148F600F7A07C /* WDTextureManager.m */; };
 		04D3DB062136723D00326A49 /* WDBossBloodView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3DB052136723D00326A49 /* WDBossBloodView.m */; };
 		04DC3F492133977200FC1E18 /* beginS_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 04DC3F482133977200FC1E18 /* beginS_6.png */; };
@@ -2042,6 +2043,7 @@
 		04C37B9C2270623D00FF562B /* PassiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PassiveViewController.h; sourceTree = "<group>"; };
 		04C37B9D2270623D00FF562B /* PassiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PassiveViewController.m; sourceTree = "<group>"; };
 		04C37B9F227062B500FF562B /* learnPassive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = learnPassive.png; sourceTree = "<group>"; };
+		04C7B6262321F7030085653A /* sniper_line.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sniper_line.mp3; sourceTree = "<group>"; };
 		04C93270211148F600F7A07C /* WDTextureManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDTextureManager.h; sourceTree = "<group>"; };
 		04C93271211148F600F7A07C /* WDTextureManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDTextureManager.m; sourceTree = "<group>"; };
 		04D3DB042136723D00326A49 /* WDBossBloodView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDBossBloodView.h; sourceTree = "<group>"; };
@@ -2144,7 +2146,7 @@
 		4398394A210D652000A6E48D /* ShooterMonster.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShooterMonster.m; sourceTree = "<group>"; };
 		4398394C210D653900A6E48D /* ShooterModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShooterModel.h; sourceTree = "<group>"; };
 		4398394D210D653900A6E48D /* ShooterModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShooterModel.m; sourceTree = "<group>"; };
-		439872AC20A1925E001B8CFB /* begin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = begin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		439872AC20A1925E001B8CFB /* zombies_live.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zombies_live.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		439872AF20A1925E001B8CFB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		439872B020A1925E001B8CFB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		439872B220A1925E001B8CFB /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -3878,6 +3880,7 @@
 		04923F0721255FE1006D7B43 /* Music */ = {
 			isa = PBXGroup;
 			children = (
+				04C7B6252321F6E80085653A /* SniperMusic */,
 				04B92B5B2320FBCB000A78CE /* kanaMusic */,
 				04B92B4C2320F3A2000A78CE /* shanaMusic */,
 				04B92B492320F01B000A78CE /* MagicMusic */,
@@ -4095,6 +4098,14 @@
 				04C37B9122705ED400FF562B /* blue6.png */,
 			);
 			path = "蓝光";
+			sourceTree = "<group>";
+		};
+		04C7B6252321F6E80085653A /* SniperMusic */ = {
+			isa = PBXGroup;
+			children = (
+				04C7B6262321F7030085653A /* sniper_line.mp3 */,
+			);
+			path = SniperMusic;
 			sourceTree = "<group>";
 		};
 		04F622A32179B5B1005D37A3 /* AngerMonster */ = {
@@ -4344,7 +4355,7 @@
 		439872AD20A1925E001B8CFB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				439872AC20A1925E001B8CFB /* begin.app */,
+				439872AC20A1925E001B8CFB /* zombies_live.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -4434,9 +4445,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		439872AB20A1925E001B8CFB /* begin */ = {
+		439872AB20A1925E001B8CFB /* zombies_live */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 439872C920A1925E001B8CFB /* Build configuration list for PBXNativeTarget "begin" */;
+			buildConfigurationList = 439872C920A1925E001B8CFB /* Build configuration list for PBXNativeTarget "zombies_live" */;
 			buildPhases = (
 				439872A820A1925E001B8CFB /* Sources */,
 				439872A920A1925E001B8CFB /* Frameworks */,
@@ -4446,9 +4457,9 @@
 			);
 			dependencies = (
 			);
-			name = begin;
+			name = zombies_live;
 			productName = HotSchool;
-			productReference = 439872AC20A1925E001B8CFB /* begin.app */;
+			productReference = 439872AC20A1925E001B8CFB /* zombies_live.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -4466,7 +4477,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 439872A720A1925E001B8CFB /* Build configuration list for PBXProject "begin" */;
+			buildConfigurationList = 439872A720A1925E001B8CFB /* Build configuration list for PBXProject "zombies_live" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -4479,7 +4490,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				439872AB20A1925E001B8CFB /* begin */,
+				439872AB20A1925E001B8CFB /* zombies_live */,
 			);
 		};
 /* End PBXProject section */
@@ -4538,6 +4549,7 @@
 				0409E330225D9CAB00953073 /* sniper_attack_4.png in Resources */,
 				04923F1D21256F05006D7B43 /* skill2.mp3 in Resources */,
 				0415C46D22A788CE0031A389 /* boss3_attack1_5.png in Resources */,
+				04C7B6272321F7030085653A /* sniper_line.mp3 in Resources */,
 				040784FF225F057C0062F4C7 /* person2_attack3_4.png in Resources */,
 				040785F7225F27650062F4C7 /* person1_attack5_8.png in Resources */,
 				0415C45222A788CE0031A389 /* boss3_attack6_5.png in Resources */,
@@ -5669,7 +5681,7 @@
 				INFOPLIST_FILE = HotSchool/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.begin.bat;
+				PRODUCT_BUNDLE_IDENTIFIER = dream.wd.game;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -5688,7 +5700,7 @@
 				INFOPLIST_FILE = HotSchool/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.begin.bat;
+				PRODUCT_BUNDLE_IDENTIFIER = dream.wd.game;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -5698,7 +5710,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		439872A720A1925E001B8CFB /* Build configuration list for PBXProject "begin" */ = {
+		439872A720A1925E001B8CFB /* Build configuration list for PBXProject "zombies_live" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				439872C720A1925E001B8CFB /* Debug */,
@@ -5707,7 +5719,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		439872C920A1925E001B8CFB /* Build configuration list for PBXNativeTarget "begin" */ = {
+		439872C920A1925E001B8CFB /* Build configuration list for PBXNativeTarget "zombies_live" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				439872CA20A1925E001B8CFB /* Debug */,

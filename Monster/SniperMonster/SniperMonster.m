@@ -15,9 +15,8 @@
     BaseNode    *_star;
     SniperModel *_model;
     __weak BaseNode *_personNode;
-    
-
 }
+
 - (void)initActionWithModel:(WDBaseModel *)model
 {
     [super initActionWithModel:model];
@@ -214,8 +213,9 @@
     CGFloat x = _personNode.position.x + xDirection * smallM;
     CGFloat y = _personNode.position.y + yDirection * smallM;
     SKAction *move = [SKAction moveTo:CGPointMake(x, y) duration:0.05];
+    
     //_star.position = CGPointMake(x,y);
-    [_star runAction:move];
+    [_star runAction:[SKAction group:@[move,_model.musicSniperLine]]];
 }
 
 - (void)monsterMoveAction:(BaseNode *)personNode {
