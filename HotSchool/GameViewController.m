@@ -513,7 +513,7 @@
         _selectIndex = 0;
     }
     SKView *skView = (SKView *)self.view;
-    //skView.showsPhysics = YES;
+    skView.showsPhysics = YES;
     SKTransition *tr = [SKTransition fadeWithDuration:1];
     //[skView presentScene:_selectScene transition:[WDActionTool changeSceneRandomWithTime:1 actionIndex:_selectIndex]];
     [skView presentScene:_selectScene transition:tr];
